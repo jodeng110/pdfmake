@@ -16341,7 +16341,7 @@
 		var normalized = normalizeTextArray(textArray);
 
 		normalized.forEach(function(item) {
-			var fontName = getStyleProperty(item, styleContextStack, 'font', 'RNotoSerif');
+			var fontName = getStyleProperty(item, styleContextStack, 'font', 'NotoSerif');
 			var fontSize = getStyleProperty(item, styleContextStack, 'fontSize', 12);
 			var bold = getStyleProperty(item, styleContextStack, 'bold', false);
 			var italics = getStyleProperty(item, styleContextStack, 'italics', false);
