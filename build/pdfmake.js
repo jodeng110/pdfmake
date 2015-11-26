@@ -69,7 +69,7 @@
 		}
 	};
 
-	var cusomClientFonts = {
+	var customClientFonts = {
 		NotoSerif: {
 			normal: 'NotoSerif-Regular.ttf',
 			bold: 'NotoSerif-Bold.ttf',
