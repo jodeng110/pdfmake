@@ -70,11 +70,11 @@
 	};
 
 	var customClientFonts = {
-		NotoSerif: {
-			normal: 'NotoSerif-Regular.ttf',
-			bold: 'NotoSerif-Bold.ttf',
-			italics: 'NotoSerif-Italic.ttf',
-			bolditalics: 'NotoSerif-BoldItalic.ttf'
+		NotoSans: {
+			normal: 'NotoSansCJKkr-Regular.ttf',
+			bold: 'NotoSansCJKkr-Bold.ttf',
+			italics: 'NotoSansCJKkr-Medium.ttf',
+			bolditalics: 'NotoSansCJKkr-Medium.ttf'
 		}
 	};
 
@@ -2136,7 +2136,7 @@
 	    builder.registerTableLayouts(options.tableLayouts);
 	  }
 
-		var pages = builder.layoutDocument(docDefinition.content, this.fontProvider, docDefinition.styles || {}, docDefinition.defaultStyle || { fontSize: 12, font: 'NotoSerif' }, docDefinition.background, docDefinition.header, docDefinition.footer, docDefinition.images, docDefinition.watermark, docDefinition.pageBreakBefore);
+		var pages = builder.layoutDocument(docDefinition.content, this.fontProvider, docDefinition.styles || {}, docDefinition.defaultStyle || { fontSize: 12, font: 'NotoSans' }, docDefinition.background, docDefinition.header, docDefinition.footer, docDefinition.images, docDefinition.watermark, docDefinition.pageBreakBefore);
 
 		renderPages(pages, this.fontProvider, this.pdfKitDoc);
 
@@ -16204,7 +16204,7 @@
 		text = text.replace('\t', '    ');
 
 		//TODO: refactor - extract from measure
-		var fontName = getStyleProperty({}, styleContextStack, 'font', 'NotoSerif');
+		var fontName = getStyleProperty({}, styleContextStack, 'font', 'NotoSans');
 		var fontSize = getStyleProperty({}, styleContextStack, 'fontSize', 12);
 		var bold = getStyleProperty({}, styleContextStack, 'bold', false);
 		var italics = getStyleProperty({}, styleContextStack, 'italics', false);
@@ -16341,7 +16341,7 @@
 		var normalized = normalizeTextArray(textArray);
 
 		normalized.forEach(function(item) {
-			var fontName = getStyleProperty(item, styleContextStack, 'font', 'NotoSerif');
+			var fontName = getStyleProperty(item, styleContextStack, 'font', 'NotoSans');
 			var fontSize = getStyleProperty(item, styleContextStack, 'fontSize', 12);
 			var bold = getStyleProperty(item, styleContextStack, 'bold', false);
 			var italics = getStyleProperty(item, styleContextStack, 'italics', false);
