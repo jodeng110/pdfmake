@@ -71,10 +71,10 @@
 
 	var customClientFonts = {
 		NotoSans: {
-			normal: 'NotoSansCJKkr-Regular.ttf',
-			bold: 'NotoSansCJKkr-Bold.ttf',
-			italics: 'NotoSansCJKkr-Medium.ttf',
-			bolditalics: 'NotoSansCJKkr-Bold.ttf'
+			normal: 'notosanscjkregular.ttf',
+			bold: 'notosanscjkbold.ttf',
+			italics: 'notosanscjkmedium.ttf',
+			bolditalics: 'notosanscjkbold.ttf'
 		}
 	};
 
